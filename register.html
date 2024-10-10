@@ -1,39 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <title>User Registration</title>
-      <link href="style.css" rel="stylesheet">
-      <script src="register.js" defer></script>
-   </head>
+<head>
+    <meta charset="UTF-8">
+    <title>User Registration</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="register.js" defer></script> <!-- 'defer' makes sure JS runs after DOM is ready -->
+</head>
 
-   <body>
-   <h1>User Registration</h1>
-   <div class="form">
-    <!--Text <input> element with ID fullName and label "Full Name"-->
-    <p>
-        <label for="fullName">Full Name</label>
-        <input type="text" id="fullName">
-    </p>
-    <!--Email <input> element with ID email and label "Email" "Full Name"-->
-    <p>
-        <label for="email">Email</label>
-        <input type="text" id="email">
-    </p>
-    <!--Password <input> element with ID password and label "Password"-->
-    <p>
-        <label for="password">Password</label>
-        <input type="text" id="password">
-    </p>
-    <!--Password <input> element with ID passwordConfirm and label "Confirm Password"-->
-    <p>
-        <label for="passwordConfirm">Confirm Password</label>
-        <input type="text" id="passwordConfirm">
-    </p>
-    <!--Submit <input> element with ID submit and value "Register"-->
-    <input type="submit" value="Register">
-   </div>
-   <!--<div> for errors: Create a <div> with ID formErrors that will be used to display any validation errors.-->
-    <div id="formErrors"></div>
-   </body>
+<body>
+<h1>User Registration</h1>
+<div class="form">
+    <form id="myForm"> <!-- Form element with ID -->
+        <p>
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName"> <!-- Input for full name -->
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input type="text" id="email"> <!-- Input for email -->
+        </p>
+        <p>
+            <label for="password">Password</label>
+            <input type="password" id="password"> <!-- Use 'type="password"' for password input -->
+        </p>
+        <p>
+            <label for="passwordConfirm">Confirm Password</label>
+            <input type="password" id="passwordConfirm"> <!-- Use 'type="password"' for confirmation input -->
+        </p>
+        <input type="submit" value="Register"> <!-- Submit button -->
+    </form>
+    <div id="formErrors" style="display: none;"> <!-- Div for error messages -->
+        <ul id="errorList"></ul> <!-- List for error messages -->
+    </div>
+</div>
+</body>
 </html>
