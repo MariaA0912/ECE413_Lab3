@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>User Registration</title>
+      <link href="style.css" rel="stylesheet">
+      <script src="register.js" defer></script>
+   </head>
+
+   <body>
+   <h1>User Registration</h1>
+   <div class="form">
+    <!--Text <input> element with ID fullName and label "Full Name"-->
+    <p>
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName">
+    </p>
+    <!--Email <input> element with ID email and label "Email" "Full Name"-->
+    <p>
+        <label for="email">Email</label>
+        <input type="text" id="email">
+    </p>
+    <!--Password <input> element with ID password and label "Password"-->
+    <p>
+        <label for="password">Password</label>
+        <input type="text" id="password">
+    </p>
+    <!--Password <input> element with ID passwordConfirm and label "Confirm Password"-->
+    <p>
+        <label for="passwordConfirm">Confirm Password</label>
+        <input type="text" id="passwordConfirm">
+    </p>
+    <!--Submit <input> element with ID submit and value "Register"-->
+    <input type="submit" value="Register">
+   </div>
+   <!--<div> for errors: Create a <div> with ID formErrors that will be used to display any validation errors.-->
+    <div id="formErrors"></div>
+   </body>
+</html>

@@ -1,0 +1,9 @@
+/*The default border for the text, email, and password <input> elements should be 1 pixel, solid, with color #aaa*/
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    border: 1px solid #aaa;
+}
+#formErrors{
+    display: none;
+}
