@@ -1,9 +1,19 @@
-/*The default border for the text, email, and password <input> elements should be 1 pixel, solid, with color #aaa*/
 input[type="text"],
 input[type="email"],
 input[type="password"] {
     border: 1px solid #aaa;
+    padding: 8px;
+    width: 300px;
+    margin-bottom: 10px;
 }
-#formErrors{
+
+#formErrors {
     display: none;
+    color: red;
+    margin-top: 10px;
+}
+
+#errorList {
+    list-style-type: none;
+    padding: 0;
 }

@@ -4,34 +4,31 @@
     <meta charset="UTF-8">
     <title>User Registration</title>
     <link href="style.css" rel="stylesheet">
-    <script src="register.js" defer></script> <!-- 'defer' makes sure JS runs after DOM is ready -->
+    <script src="register.js" defer></script>
 </head>
-
 <body>
-<h1>User Registration</h1>
-<div class="form">
-    <form id="myForm"> <!-- Form element with ID -->
+    <h1>User Registration</h1>
+    <div class="form">
         <p>
             <label for="fullName">Full Name</label>
-            <input type="text" id="fullName"> <!-- Input for full name -->
+            <input type="text" id="fullName">
         </p>
         <p>
             <label for="email">Email</label>
-            <input type="text" id="email"> <!-- Input for email -->
+            <input type="email" id="email">
         </p>
         <p>
             <label for="password">Password</label>
-            <input type="password" id="password"> <!-- Use 'type="password"' for password input -->
+            <input type="password" id="password">
         </p>
         <p>
             <label for="passwordConfirm">Confirm Password</label>
-            <input type="password" id="passwordConfirm"> <!-- Use 'type="password"' for confirmation input -->
+            <input type="password" id="passwordConfirm">
         </p>
-        <input type="submit" value="Register"> <!-- Submit button -->
-    </form>
-    <div id="formErrors" style="display: none;"> <!-- Div for error messages -->
-        <ul id="errorList"></ul> <!-- List for error messages -->
+        <input type="submit" id="submit" value="Register">
     </div>
-</div>
+    <div id="formErrors" style="display: none;">
+        <ul id="errorList"></ul>
+    </div>
 </body>
 </html>
